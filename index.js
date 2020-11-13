@@ -25,7 +25,7 @@ class CouchDBServices {
 
 }
 
-CouchDBServices.prototype.createDabase = async(strDatabaseName) => {
+CouchDBServices.prototype.createDabase = async function(strDatabaseName) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -40,7 +40,7 @@ CouchDBServices.prototype.createDabase = async(strDatabaseName) => {
     }
 };
 
-CouchDBServices.prototype.get = async(idDoc) => {
+CouchDBServices.prototype.get = async function(idDoc) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -56,7 +56,7 @@ CouchDBServices.prototype.get = async(idDoc) => {
     }
 };
 
-CouchDBServices.prototype.getAll = async(arrayQuery = { mangoQuery: { selector: {}, limit: 1000 } }, arrayIndex = false) => {
+CouchDBServices.prototype.getAll = async function(arrayQuery = { mangoQuery: { selector: {}, limit: 1000 } }, arrayIndex = false) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -76,7 +76,7 @@ CouchDBServices.prototype.getAll = async(arrayQuery = { mangoQuery: { selector: 
 
 };
 
-CouchDBServices.prototype.create = async(newDoc) => {
+CouchDBServices.prototype.create = async function(newDoc) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -92,7 +92,7 @@ CouchDBServices.prototype.create = async(newDoc) => {
     }
 };
 
-CouchDBServices.prototype.update = async(doc) => {
+CouchDBServices.prototype.update = async function(doc) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -108,7 +108,7 @@ CouchDBServices.prototype.update = async(doc) => {
     }
 };
 
-CouchDBServices.prototype.delete = async(doc) => {
+CouchDBServices.prototype.delete = async function(doc) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -125,7 +125,7 @@ CouchDBServices.prototype.delete = async(doc) => {
 
 };
 
-CouchDBServices.prototype.view = async(designname, viewname, params) => {
+CouchDBServices.prototype.view = async function(designname, viewname, params) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
@@ -146,7 +146,7 @@ CouchDBServices.prototype.view = async(designname, viewname, params) => {
     }
 };
 
-CouchDBServices.prototype.bulk = async(arrayDocs) => {
+CouchDBServices.prototype.bulk = async function(arrayDocs) {
     let output = new moduleConnector();
     try {
         let couchInstance = nano(this.dbEndpoint);
