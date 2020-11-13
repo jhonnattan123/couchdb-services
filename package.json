@@ -1,19 +1,23 @@
 {
-  "name": "@nucleo/couchdb-service",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jhonnattan123/couchdb-service.git"
-  },
-  "author": "jhonnattan rivera",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jhonnattan123/couchdb-service/issues"
-  },
-  "homepage": "https://github.com/jhonnattan123/couchdb-service#readme"
+    "name": "couchdb-services",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jhonnattan123/couchdb-services.git"
+    },
+    "author": "jhonnattan rivera",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jhonnattan123/couchdb-services/issues"
+    },
+    "homepage": "https://github.com/jhonnattan123/couchdb-services#readme",
+    "dependencies": {
+        "module-connector": "^1.0.9",
+        "nano": "^9.0.1"
+    }
 }
